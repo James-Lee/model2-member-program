@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>member_project</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>ControlURI</servlet-name>
+    <servlet-class>com.javateam.member.controller.ControlURI</servlet-class>
+    <init-param>
+      <param-name>configFile</param-name>
+      <param-value>E:\teacher\lsh\works\jse_2\member_project\WebContent\WEB-INF\CommandURI.properties</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ControlURI</servlet-name>
+    <url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>PreventViewingJSPs</web-resource-name>
+      <description>JSP Access Denied</description>
+      <url-pattern>*.jsp</url-pattern>
+      <http-method>GET</http-method>
+      <http-method>POST</http-method>
+      <http-method>PUT</http-method>
+      <http-method>DELETE</http-method>
+    </web-resource-collection>
+    <auth-constraint/>
+  </security-constraint>
+  <resource-ref>
+    <description>oracle 11g</description>
+    <res-ref-name>jdbc/xe</res-ref-name>
+    <res-type>javax.sql.DataSource</res-type>
+    <res-auth>Container</res-auth>
+  </resource-ref>
+  <error-page>
+    <error-code>403</error-code>
+    <location>/error/403.jsp</location>
+  </error-page>
+</web-app>

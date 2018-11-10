@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/* 회원정보수정 전체 레이아웃 */
+#wrapUpdate
+{
+	border-top:1px solid gray;
+	border-right:1px solid gray;
+	width:622px;
+	height:657px;
+	color:#333;
+}
+
+div#roadAddr_msg, div#oldAddr_msg 
+{
+	position:relative;
+	left:200px;
+	top:-22px;
+	width:280px; 
+	height:20px;
+	font-size:12px;
+	padding-left:10px;
+	padding-top:6px;
+	background-color:yellow;
+	color:red;
+}

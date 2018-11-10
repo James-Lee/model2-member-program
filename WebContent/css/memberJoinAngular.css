@@ -1,0 +1,131 @@
+@CHARSET "UTF-8";
+
+/* 회원가입 전체 레이아웃 */
+#wrap 
+{
+	border-top:1px solid gray;
+	border-right:1px solid gray;
+	width:622px;
+	height:617px;
+	color:#333;
+}
+
+/* 회원조회 전체 레이아웃 */
+#wrapView 
+{
+	border-top:1px solid gray;
+	border-right:1px solid gray;
+	width:622px;
+	height:577px;
+	color:#333;
+}
+    
+/* 각종 라벨 스타일 */
+.fld_title 
+{ 
+	float:left; 
+	padding:12px 0px 1px 10px;
+	width:100px; 
+	height:25px;
+	font-size:12px; 
+	font-weight:bold;
+	border-left:1px solid gray;
+	border-bottom: 1px solid gray;
+}    
+               
+/* 라벨 스타일 2 */
+.fld_title2 
+{ 
+    float:left; 
+    padding:12px 0px 1px 10px;
+    width:100px; 
+    height:60px;
+    font-size:12px; 
+    font-weight:bold;
+    border-left:1px solid gray;
+    border-bottom: 1px solid gray; 
+}    
+               
+/* 필드 스타일 */               
+.fld_val 
+{      
+	float:left; 
+	padding:10px 0px 3px 10px; 
+	font-size:12px; 
+	width:500px;
+	height:25px;
+	border-left:1px solid gray;
+	border-bottom: 1px solid gray; 
+}
+             
+/* 필드 스타일2 */             
+.fld_val2 
+{      
+	float:left; 
+	padding:10px 0px 3px 10px; 
+	font-size:12px; 
+	width:500px;
+	height:60px;
+	line-height:10px;
+	border-left:1px solid gray;
+	border-bottom: 1px solid gray; 
+}    
+             
+/* 전송/취소 버튼 필드 패널 */             
+.btn_fld 
+{      
+	float:left; 
+	text-align:center;
+	padding-top:10px;
+	font-size:12px; 
+	width:622px;
+	height:30px;
+	border-left:1px solid gray;
+	border-bottom: 1px solid gray; 
+}                          
+                          
+/* 전체 input 필드에 대한 글꼴 크기 */ 
+input { font-size:12px; }
+    
+/* 아이디/패쓰워드/성명 필드 */
+input#id_fld, input#pw_fld, input#name_fld
+{ 
+	font-size:12px;
+	border:1px solid #ccc;
+	width:10em;
+}
+
+/* 이메일 필드, 전화번호 국번 */
+input#email1, input#email3 
+{ 
+	font-size:12px;
+	border:1px solid #ccc;
+}
+                 
+select#email2, select#phone1 
+{ 
+	font-size:12px;
+	border:1px soild #ccc;
+	height:20px;
+}    
+
+/* 휴대폰/전화번호/우편번호... */
+input#mobile2, input#mobile3,
+input#phone2, input#phone3,
+input#zip1, input#zip2_1, input#zip2_2,
+input#roadAddr1, input#roadAddr2,
+input#oldAddr1, input#oldAddr2,
+input#birthday, input#joindate
+{
+    font-size:12px;
+    border:1px solid #ccc;
+}
+                 
+/* 아이디/이메일 중복점검, 주소검색, 전송/취소 버튼 */
+input.btn_style 
+{
+	font-size:12px;
+	border:1px solid #999;
+	background-color:#f2f2f2; 
+	color:#333;
+}

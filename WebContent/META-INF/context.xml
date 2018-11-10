@@ -1,0 +1,9 @@
+<Context>
+
+	<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver"
+			factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory"
+			maxActive="20" maxIdle="10" maxWait="-1" name="jdbc/xe" password="java"
+			type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:xe"
+			username="java" />
+
+</Context>

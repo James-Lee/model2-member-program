@@ -1,0 +1,68 @@
+@CHARSET "UTF-8";
+
+/* 아이디 중복 점검, 패쓰워드, 이름, 성별, 
+    휴대폰/연락처 "메시지창" */
+/* div[id$=_msg] */    
+div#id_msg, 
+div#new_pw_msg, div#new_pw2_msg,
+div#name_msg, div#gender_msg,
+div#mobile_msg, div#phone_msg, div#birthday_msg
+{
+	position:relative;
+	left:250px;
+	top:-22px;
+	width:230px; 
+	height:20px;
+	font-size:12px;
+	padding-left:10px;
+	padding-top:6px;
+	background-color:yellow;
+}
+
+/* 패쓰워드 입력란 */
+div#pw_msg 
+{
+	position:relative;
+	left:160px;
+	top:-22px;
+	width:320px; 
+	height:20px;
+	font-size:12px;
+	padding-left:10px;
+	padding-top:6px;
+	background-color:yellow;
+}
+
+
+/* 이메일 메시지창 */
+div#email_msg 
+{
+    position:relative;
+	left:5px;
+	top:0px;
+	width:250px; 
+	height:20px;
+	font-size:12px;
+	padding-left:10px;
+	padding-top:6px;
+}
+
+/* 상단부 쿠키 플래그 현황 패널 : 테스트용 */
+#cookie_flag
+{
+	color:red;
+	font-weight:bold;
+	font-size:1em;
+	line-height:1.5em;
+	background-color:cyan;
+}
+
+/* 최상단부 메시지 채널 : 테스트용 */
+#total_msg
+{
+	color:purple;
+	font-weight:bold;
+	font-size:1em;
+	line-height:1.5em;
+	background-color:yellow;
+}

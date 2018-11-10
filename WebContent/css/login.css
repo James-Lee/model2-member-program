@@ -1,0 +1,105 @@
+@CHARSET "UTF-8";
+
+/* 로그인 전체 패널 */
+#login_pnl
+{
+	background-color : lightgray;
+	width : 400px;
+	height : 400px;
+	margin : 0 auto;
+	font-family : 나눔고딕;
+}
+
+/* 아이디 패널 */
+#id_pnl
+{
+	/* background-color : yellow; */
+	width : 400px;
+	height : 65px;
+	text-align : center;
+	padding-top : 15px;
+}
+
+/* 패쓰워드 패널 */
+#pw_pnl 
+{
+	/* background-color : orange; */
+	width : 400px;
+	height : 65px;
+	text-align : center;
+	padding-top : 15px;
+}
+
+/* 로그인 버튼 패널 */
+#login_btn_pnl
+{
+	/* background-color : #fa83f3; */
+	width : 400px;
+	height : 85px;
+	text-align : center;
+	padding-top : 15px;
+}
+
+/* 기타 버튼 패널 : 아이디/비밀번호찾기 및 회원가입 버튼 */
+#etc_btn_pnl
+{
+/* 	background-color : lightgray; */
+	width : 400px;
+	height : 40px;
+	text-align : center;
+	padding-top : 10px;
+}
+
+/* 아이디/패쓰워드 필드 */
+.input_fld
+{
+	text-indent : 10px;
+	font-size : 1em;
+	color : #333;
+	width : 350px;
+	height : 50px;
+	border : 1px solid #ccc;
+	
+}
+
+/* 로그인 버튼 */
+#login_btn 
+{
+	background-color : green;
+	font-size : 1.5em;
+	color : white;
+	border : 0px;
+	width : 354px;
+	height : 70px;
+	text-align : center;
+}
+
+/* 아이디/비밀번호찾기 및 회원가입 버튼 */
+a.etc_btn:link, 
+a.etc_btn:visited
+{
+	font-size : 14px;
+	text-decoration : none;
+	color : gray; 
+}
+
+a.etc_btn:hover
+{
+	font-size : 14px;
+	text-decoration : underline;
+	color : #333; 
+}
+
+div#id_msg, div#pw_msg
+{
+    position:relative;
+	left:10px;
+	top:0px;
+	width:350px; 
+	height:30px;
+	padding-left:20px;
+	padding-top:2px;
+	color:red;
+	font-size:8pt;
+	text-align:left;
+}
